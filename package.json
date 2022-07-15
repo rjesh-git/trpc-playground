@@ -4,6 +4,8 @@
   "description": "trpc playground",
   "main": "http.ts",
   "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,8 @@
   "homepage": "https://github.com/rjesh-git/trpc-playground#readme",
   "dependencies": {
     "@trpc/server": "^9.26.0",
+    "typescript": "^4.7.4",
+    "ts-node": "^9.0.0",
     "zod": "^3.17.3"
   }
 }
