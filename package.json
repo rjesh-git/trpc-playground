@@ -1,0 +1,24 @@
+
+{
+  "name": "bun-sh",
+  "version": "1.0.0",
+  "description": "bun shell playground",
+  "main": "http.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjesh-git/bun-sh.git"
+  },
+  "keywords": [
+    "shell",
+    "bun"
+  ],
+  "author": "Rajesh Sitaraman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjesh-git/bun-sh/issues"
+  },
+  "homepage": "https://github.com/rjesh-git/bun-sh#readme"
+}
