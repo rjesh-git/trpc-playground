@@ -1,15 +1,14 @@
-
 {
-  "name": "bun-sh",
+  "name": "trpc_playground",
   "version": "1.0.0",
-  "description": "bun shell playground",
+  "description": "trpc playground",
   "main": "http.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rjesh-git/bun-sh.git"
+    "url": "git+https://github.com/rjesh-git/trpc-playground.git"
   },
   "keywords": [
     "shell",
@@ -18,7 +17,11 @@
   "author": "Rajesh Sitaraman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rjesh-git/bun-sh/issues"
+    "url": "https://github.com/rjesh-git/trpc-playground/issues"
   },
-  "homepage": "https://github.com/rjesh-git/bun-sh#readme"
+  "homepage": "https://github.com/rjesh-git/trpc-playground#readme",
+  "dependencies": {
+    "@trpc/server": "^9.26.0",
+    "zod": "^3.17.3"
+  }
 }

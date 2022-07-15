@@ -1,2 +1,2 @@
-# bun-sh
-Bun sh playground
+# tRPC Playground
+

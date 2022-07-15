@@ -1,13 +1,12 @@
 # [Choice] Debian OS version: bullseye, buster
 FROM --platform=linux/amd64 mcr.microsoft.com/vscode/devcontainers/base:dev-bullseye
 
-ENV BUN_INSTALL=/bun
-RUN mkdir -p /bun \
-    && curl -fsSL https://bun.sh/install | sh \
-    && chown -R vscode /bun
+# Install nvm with node and npm
+RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash \
+    && . $NVM_DIR/nvm.sh \
+    && nvm install $NODE_VERSION \
+    && nvm alias default $NODE_VERSION \
+    && nvm use default
 
-ENV PATH=${BUN_INSTALL}/bin:${PATH}
-
-# [Optional] Uncomment this section to install additional OS packages.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#    && apt-get -y install --no-install-recommends <your-package-list-here>
+ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
+ENV PATH      $NVM_DIR/v$NODE_VERSION/bin:$PATH
